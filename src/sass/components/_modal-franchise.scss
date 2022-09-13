@@ -1,0 +1,121 @@
+.modal-franchise {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 280px;
+
+  background-color: var(--white-color-text);
+  border: 2px solid var(--hero-link-hero-color);
+  border-radius: 10px;
+  padding: 28px;
+}
+.modal-franchise__wrapper {
+  position: relative;
+}
+.btn-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  line-height: 0;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    fill: var(--hero-link-hero-color);
+  }
+}
+.modal-franchise__introduction {
+  font-family: 'Seymour One', sans-serif;
+  @include font(15px, 400, 24px);
+  color: var(--secondary-title-color);
+  text-align: start;
+  margin-bottom: 20px;
+}
+.modal-franchise__text {
+  @include font(14px, 400, 19px);
+  color: var(--secondary-title-color);
+  margin-bottom: 24px;
+}
+.modal-franchise__input {
+  display: block;
+  border: 2px solid var(--background-green-color);
+  border-radius: 10px;
+  height: 32px;
+  width: 100%;
+  padding: 8px 12px;
+  background-color: rgba(248, 210, 78, 0.1);
+}
+.modal-franchise__label {
+  display: block;
+}
+.modal-franchise__label:not(:last-child) {
+  margin-bottom: 12px;
+}
+.modal-franchise__comment {
+  display: block;
+  border: 2px solid var(--background-green-color);
+  border-radius: 10px;
+  height: 64px;
+  width: 100%;
+  padding: 8px 12px;
+  margin-bottom: 24px;
+  background-color: rgba(248, 210, 78, 0.1);
+}
+.modal-franchise__btn {
+  @include font(12px, 600, 15px);
+  padding: 7px 47px;
+  display: block;
+
+  background-color: var(--hero-link-hero-color);
+  border: 2px solid var(--hero-link-hero-color);
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.modal-franchise__wrapper.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+  .modal-franchise {
+    width: 568px;
+    padding: 32px 0;
+  }
+  .modal-franchise__introduction {
+    @include font(20px, 400, 28px);
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  .modal-franchise__introduction-wrap {
+    padding-left: 123px;
+    padding-right: 123px;
+  }
+  .modal-franchise__text {
+    @include font(16px, 400, 22.4px);
+    padding-right: 60px;
+    padding-left: 60px;
+    margin-bottom: 32px;
+  }
+  .modal-franchise__form {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .modal-franchise__input {
+    height: 42px;
+  }
+  .modal-franchise__label:not(:last-child) {
+    margin-bottom: 16px;
+  }
+  .modal-franchise__comment {
+    margin-bottom: 32px;
+  }
+  .modal-franchise__btn {
+    @include font(14px, 600, 17px);
+    padding: 12px 34px;
+  }
+}

@@ -1,0 +1,72 @@
+<section id="how-its-made" class="about">
+  <div class="container">
+    <p class="about__label">tradition and love</p>
+    <h2 class="about__title">how it’s made?</h2>
+    <ul class="about__content list">
+      <li class="about__image">
+        <picture>
+          <source
+            srcset="
+              ../src/images/about/desktop/cow.png    1x,
+              ../src/images/about/desktop/cow@2x.png 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              ../src/images/about/tablet/cow.png    1x,
+              ../src/images/about/tablet/cow@2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ../src/images/about/mobile/cow.png    1x,
+              ../src/images/about/mobile/cow@2x.png 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <img
+            src="../src/images/about/mobile/cow.png"
+            alt="image-cow"
+            class="about__foto"
+          />
+        </picture>
+      </li>
+      <li class="about__production">
+        <ul class="about__list-text list">
+          <li class="about__item-text about__text-first">
+            <p class="about__production-text">
+              Ice is a place where you will become not only a little happier,
+              but also healthier. Health is the main value for us, and we follow
+              it when creating our handmade desserts.
+            </p>
+          </li>
+          <li class="about__item-text about__text-second">
+            <p class="about__production-text about__production-text--14px">
+              We use traditional recipes and 100% natural ingredients. Our
+              products are so natural that they can be given to children from
+              the age of three years. Sweets lovers can expect 55 types of ice
+              cream, 15 types of coffee and 23 milkshakes.
+            </p>
+          </li>
+          <li class="about__item-text about__text-last">
+            <p class="about__production-text about__production-text--14px">
+              This is enough to choose ice cream and coffee for any mood!
+            </p>
+          </li>
+          <li>
+            <button data-reading-open type="button" class="about__btn">
+              Read more
+              <svg class="about__btn-icon" width="8" height="10">
+                <use
+                  href="../src/images/sprite/sprite.svg#icon-button-arrow"
+                ></use>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</section>
